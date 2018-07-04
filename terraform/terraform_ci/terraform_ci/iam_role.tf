@@ -1,7 +1,7 @@
 /* Elysium用IAMロール定義 */
 
 module "role" {
-  source = "../../module/codebuild_role"
+  source = "../module/codebuild_role"
   name = "terraform-ci"
 }
 

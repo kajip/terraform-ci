@@ -1,1 +1,2 @@
 # パラメータ
+github_location = ""

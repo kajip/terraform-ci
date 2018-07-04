@@ -35,8 +35,3 @@ resource "aws_codebuild_project" "terraform_image" {
     type = "NO_ARTIFACTS"
   }
 }
-
-resource "aws_codebuild_webhook" "terraform" {
-  project_name = "${aws_codebuild_project.terraform_image.name}"
-  branch_filter = "master"
-}

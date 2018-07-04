@@ -1,4 +1,4 @@
-/** サブモジュールの定義 */
+/** Terraform CIサブモジュールの呼出 */
 
 module "terraform_ci" {
   source = "./terraform_ci"

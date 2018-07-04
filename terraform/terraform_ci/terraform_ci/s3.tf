@@ -1,7 +1,7 @@
-/* Elysium用S3定義 */
+/* Terraform用S3定義 */
 
 data "aws_s3_bucket" "terraform" {
-  bucket = "biglobe-isp-terraform-bucket"
+  bucket = "${var.terraform_s3_bucket}"
 }
 
 resource "aws_s3_bucket_policy" "terraform" {

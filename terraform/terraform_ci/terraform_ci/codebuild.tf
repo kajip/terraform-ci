@@ -1,7 +1,7 @@
 /* Terraform CI用CodeBuild定義 */
 
 resource "aws_codebuild_project" "terraform_ci" {
-  name = "terraform_ci"
+  name = "terraform-ci"
   description = "Terraform自動実行プロジェクト"
   service_role = "${module.role.arn}"
 

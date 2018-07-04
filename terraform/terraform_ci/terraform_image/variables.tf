@@ -2,7 +2,7 @@
 
 variable "name" {
   description = "プロジェクト名"
-  default = "terraform-ci"
+  default = "terraform-image"
 }
 variable "description" {
   description = "プロジェクト概要"
@@ -22,7 +22,6 @@ variable "github_location" {
   description = "GitHubのクローンURL"
   default = "https://github.com/tkajita/codebuild-terraform.git"
 }
-
 variable "region" {
   description = "AWSのリージョン"
 }

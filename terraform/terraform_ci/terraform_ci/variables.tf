@@ -17,9 +17,12 @@ variable "codebuild_image" {
   description = "ビルド用のDockerイメージ"
 }
 
+variable "terraform_s3_bucket" {
+  description = "Terraformのstatusファイルを保存するS3バケット名"
+}
+
 variable "github_location" {
   description = "GitHubのクローンURL"
-//  default = "https://github.com/biglobe-isp/elysium.git"
 }
 variable "github_oauth_token" {
   description = "GitHub用のOAuthトークン"
